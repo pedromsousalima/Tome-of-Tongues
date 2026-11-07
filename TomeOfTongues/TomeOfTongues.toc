@@ -8,6 +8,13 @@
 
 Core.lua
 Swedish.lua
-Languages.lua
+German.lua
+French.lua
+Spanish.lua
+Italian.lua
+Portuguese.lua
+Dutch.lua
+Norwegian.lua
+Japanese.lua
 UI.lua
 Hooks.lua
