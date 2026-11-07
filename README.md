@@ -5,17 +5,20 @@
 Built for **WoW Forever**.
 
 ## Languages
-| Code | Language | Words |
+Every language covers the same ~440 words and phrases, including plurals and whole phrases
+like *thank you* or *how can I help you*.
+
+| Code | Language | File |
 |---|---|---|
-| sv | Swedish (Svenska) | ~400, including phrases and plurals |
-| de | German (Deutsch) | ~135 |
-| fr | French (Français) | ~135 |
-| es | Spanish (Español) | ~135 |
-| it | Italian (Italiano) | ~135 |
-| pt | Portuguese (Português) | ~135 |
-| nl | Dutch (Nederlands) | ~130 |
-| no | Norwegian (Norsk) | ~135 |
-| ja | Japanese (romaji) | ~135 |
+| sv | Swedish (Svenska) | `Swedish.lua` |
+| de | German (Deutsch) | `German.lua` |
+| fr | French (Français) | `French.lua` |
+| es | Spanish (Español) | `Spanish.lua` |
+| it | Italian (Italiano) | `Italian.lua` |
+| pt | Portuguese (Português) | `Portuguese.lua` |
+| nl | Dutch (Nederlands) | `Dutch.lua` |
+| no | Norwegian (Norsk) | `Norwegian.lua` |
+| ja | Japanese (romaji) | `Japanese.lua` |
 
 Japanese is written in Latin letters (romaji), because the English game font can't draw
 Japanese script. If accented letters (é, ö, ñ...) show as boxes, type `/tot plain`.
@@ -69,9 +72,11 @@ wrong word or want to improve a language, contributions are very welcome.
 | `/tot reset confirm` | Start the current language over (`/tot reset all confirm` for all) |
 
 ## Adding words or languages
-- `Languages.lua` holds one `english = foreign` per line. The English word must be one that
-  appears in `Swedish.lua`, since that's where its tier and extra answers come from.
-- To add a language, copy one `ns.AddLanguage(...)` block and change the code, name and words.
-  Add a flag for it in `FLAG_PAINTERS` in `UI.lua`.
+- Each language has its own file (`German.lua`, `French.lua`, …) with `english = foreign`
+  entries, separated by `;` or new lines. The English word must be one that appears in
+  `Swedish.lua`, since that's where its tier and extra answers come from.
+- To fix a word, edit that language's file and open a pull request.
+- To add a language, copy one of those files, change the code, name and words, and add the
+  file to `TomeOfTongues.toc`. Add a flag for it in `FLAG_PAINTERS` in `UI.lua`.
 
 <p align="center"><img src="art/footer.svg" alt="A party of adventurers defeats a green bird-man, who drops the word fågel = bird"></p>
