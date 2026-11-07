@@ -8,17 +8,17 @@ Built for **WoW Forever**.
 Every language covers the same ~440 words and phrases, including plurals and whole phrases
 like *thank you* or *how can I help you*.
 
-| Code | Language | File |
-|---|---|---|
-| sv | Swedish (Svenska) | `Swedish.lua` |
-| de | German (Deutsch) | `German.lua` |
-| fr | French (Français) | `French.lua` |
-| es | Spanish (Español) | `Spanish.lua` |
-| it | Italian (Italiano) | `Italian.lua` |
-| pt | Portuguese (Português) | `Portuguese.lua` |
-| nl | Dutch (Nederlands) | `Dutch.lua` |
-| no | Norwegian (Norsk) | `Norwegian.lua` |
-| ja | Japanese (romaji) | `Japanese.lua` |
+| | Code | Language | File |
+|:-:|---|---|---|
+| <img src="art/flags/sv.svg" width="30" height="19" alt="Sweden"> | sv | Swedish (Svenska) | `Swedish.lua` |
+| <img src="art/flags/de.svg" width="30" height="19" alt="Germany"> | de | German (Deutsch) | `German.lua` |
+| <img src="art/flags/fr.svg" width="30" height="19" alt="France"> | fr | French (Français) | `French.lua` |
+| <img src="art/flags/es.svg" width="30" height="19" alt="Spain"> | es | Spanish (Español) | `Spanish.lua` |
+| <img src="art/flags/it.svg" width="30" height="19" alt="Italy"> | it | Italian (Italiano) | `Italian.lua` |
+| <img src="art/flags/pt.svg" width="30" height="19" alt="Portugal and Brazil"> | pt | Portuguese (Português) | `Portuguese.lua` |
+| <img src="art/flags/nl.svg" width="30" height="19" alt="Netherlands"> | nl | Dutch (Nederlands) | `Dutch.lua` |
+| <img src="art/flags/no.svg" width="30" height="19" alt="Norway"> | no | Norwegian (Norsk) | `Norwegian.lua` |
+| <img src="art/flags/ja.svg" width="30" height="19" alt="Japan"> | ja | Japanese (romaji) | `Japanese.lua` |
 
 Japanese is written in Latin letters (romaji), because the English game font can't draw
 Japanese script. If accented letters (é, ö, ñ...) show as boxes, type `/tot plain`.
