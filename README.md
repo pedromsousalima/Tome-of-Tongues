@@ -4,6 +4,18 @@
 
 Built for **WoW Forever**.
 
+## In game
+<table>
+  <tr>
+    <td align="center" valign="top"><img src="art/screenshots/quest.png" width="300" alt="Quest text with a few words swapped into Swedish and highlighted in blue"></td>
+    <td align="center" valign="top"><img src="art/screenshots/quiz.png" width="300" alt="The quiz pop-up under a Swedish flag banner, asking what tala means in English"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Quest text with a few words swapped into Swedish</sub></td>
+    <td align="center"><sub>Then the tome asks what they mean</sub></td>
+  </tr>
+</table>
+
 ## Languages
 Every language covers the same ~440 words and phrases, including plurals and whole phrases
 like *thank you* or *how can I help you*.
