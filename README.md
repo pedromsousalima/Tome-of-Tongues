@@ -37,6 +37,8 @@ wrong word or want to improve a language, contributions are very welcome.
    `World of Warcraft\_forever_\Interface\AddOns\`.
 3. Restart the game and tick **Tome of Tongues** under AddOns on the character screen.
 
+<p align="center"><img src="art/install.svg" alt="Copy the TomeOfTongues folder from the download into World of Warcraft\_forever_\Interface\AddOns. The .toc file must sit directly inside AddOns\TomeOfTongues."></p>
+
 ## How it works
 - **Where:** quest text (accept, progress, turn-in, greeting) and NPC gossip text.
 - **Pop-up:** up to 3 questions per dialogue, under a banner in the language's flag colours.
