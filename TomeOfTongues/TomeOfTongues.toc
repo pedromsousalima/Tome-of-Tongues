@@ -1,0 +1,13 @@
+## Interface: 16001
+## Title: |cffa335eeTome|r |cffffd100of|r |cffa335eeTongues|r
+## Notes: Learn a language while you quest. Words in NPC dialogue get swapped into one of 9 languages; translate them to level up.
+## Author: Pedro
+## Version: 2.0.0
+## SavedVariables: TomeOfTonguesDB
+## IconTexture: Interface\AddOns\TomeOfTongues\icon
+
+Core.lua
+Swedish.lua
+Languages.lua
+UI.lua
+Hooks.lua

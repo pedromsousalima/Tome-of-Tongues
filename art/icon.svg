@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="62%" cy="40%" r="75%">
+      <stop offset="0" stop-color="#4a2370"/>
+      <stop offset="0.45" stop-color="#1c0d2e"/>
+      <stop offset="1" stop-color="#050308"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="72%">
+      <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.85"/>
+    </radialGradient>
+    <linearGradient id="leatherTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a3a1c"/>
+      <stop offset="0.5" stop-color="#4f2210"/>
+      <stop offset="1" stop-color="#2a0f06"/>
+    </linearGradient>
+    <linearGradient id="leatherLow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6e3218"/>
+      <stop offset="1" stop-color="#1e0a04"/>
+    </linearGradient>
+    <radialGradient id="throat" cx="20%" cy="75%" r="90%">
+      <stop offset="0" stop-color="#f4e2ff"/>
+      <stop offset="0.25" stop-color="#b56cff"/>
+      <stop offset="0.6" stop-color="#5a1a8a"/>
+      <stop offset="1" stop-color="#1a0526"/>
+    </radialGradient>
+    <linearGradient id="tooth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#efe2bd"/>
+      <stop offset="1" stop-color="#9c8455"/>
+    </linearGradient>
+    <linearGradient id="toothUp" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#f6ecd0"/>
+      <stop offset="1" stop-color="#8f7648"/>
+    </linearGradient>
+    <linearGradient id="pages" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8f7648"/>
+      <stop offset="0.6" stop-color="#e3d2a6"/>
+      <stop offset="1" stop-color="#f3e7c6"/>
+    </linearGradient>
+    <linearGradient id="tongue" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#d4506a"/>
+      <stop offset="0.5" stop-color="#9a1f3a"/>
+      <stop offset="1" stop-color="#4a0816"/>
+    </linearGradient>
+    <radialGradient id="eye" cx="45%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#fff6c0"/>
+      <stop offset="0.35" stop-color="#ffc21a"/>
+      <stop offset="0.8" stop-color="#b85a00"/>
+      <stop offset="1" stop-color="#3a1400"/>
+    </radialGradient>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0d27a"/>
+      <stop offset="0.5" stop-color="#8a6420"/>
+      <stop offset="1" stop-color="#3e2a08"/>
+    </linearGradient>
+
+    <filter id="leather" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035 0.06" numOctaves="4" seed="3" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0.9 0 0 0 0.45  0.9 0 0 0 0.45  0.9 0 0 0 0.45  0 0 0 0 1" result="g"/>
+      <feComposite in="g" in2="SourceGraphic" operator="arithmetic" k1="1" k2="0" k3="0" k4="0"/>
+    </filter>
+    <filter id="mist" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.008 0.012" numOctaves="4" seed="8"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.25  0 0 0 0 0.85  0 0 0 1.6 -0.75"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="1"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="blur12" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="12"/></filter>
+    <filter id="blur4" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="blur24" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="24"/></filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <rect width="512" height="512" filter="url(#mist)" opacity="0.55"/>
+  <ellipse cx="300" cy="230" rx="170" ry="130" fill="#9a4dff" opacity="0.35" filter="url(#blur24)"/>
+
+  <g transform="translate(-36,-22) scale(1.12)">
+    <g transform="translate(-6,34)">
+      <!-- ground shadow -->
+      <ellipse cx="270" cy="384" rx="170" ry="20" fill="#000" opacity="0.6" filter="url(#blur12)"/>
+
+      <!-- spine hinge -->
+      <path d="M122,326 C92,310 84,272 96,248" fill="none" stroke="#1e0a04" stroke-width="44" stroke-linecap="round"/>
+      <path d="M118,322 C94,306 88,276 98,254" fill="none" stroke="#5a2812" stroke-width="20" stroke-linecap="round" opacity="0.6" filter="url(#blur4)"/>
+
+      <!-- mouth interior, lit from the throat -->
+      <path d="M136,292 L400,292 L349,130 Z" fill="url(#throat)"/>
+
+      <!-- tongue body, inside the mouth behind the bottom teeth -->
+      <path d="M200,292 C240,262 320,248 384,258 C404,262 414,272 414,292 Z" fill="url(#tongue)"/>
+      <path d="M250,268 C300,254 360,252 400,264" fill="none" stroke="#ffb3d0" stroke-width="5" stroke-linecap="round" opacity="0.45" filter="url(#blur4)"/>
+      <path d="M280,272 C320,266 360,266 392,274" fill="none" stroke="#3a0410" stroke-width="4" stroke-linecap="round" opacity="0.45"/>
+
+      <!-- lower jaw -->
+      <path d="M136,300 L136,286 L230,286 L240,268 L252,286 L266,264 L280,286 L292,270 L306,286 L322,262 L334,286 L346,272 L360,286 L374,266 L386,286 L400,276 L400,300 Z"
+            fill="url(#tooth)"/>
+      <rect x="132" y="286" width="274" height="34" fill="url(#pages)"/>
+      <path d="M134,292 L404,292 M134,298 L404,298 M134,304 L404,304 M134,310 L404,310 M134,315 L404,315" stroke="#7a6038" stroke-width="1.2" opacity="0.55"/>
+      <path d="M134,287 L404,287" stroke="#d9a6ff" stroke-width="3" opacity="0.6" filter="url(#blur4)"/>
+      <rect x="118" y="318" width="296" height="32" rx="7" fill="url(#leatherLow)" filter="url(#leather)"/>
+      <path d="M124,320 L410,320" stroke="#c4875a" stroke-width="2" opacity="0.4"/>
+      <path d="M380,318 L414,318 L414,348 L404,348 L404,328 L380,328 Z" fill="url(#brass)"/>
+      <circle cx="408" cy="323" r="3" fill="#fff0b0" opacity="0.8"/>
+
+      <!-- light spilling out of the mouth -->
+      <path d="M200,282 L420,300 L520,230 L470,90 L360,110 Z" fill="#c890ff" opacity="0.28" filter="url(#blur24)"/>
+
+      <!-- tongue -->
+      <!-- tongue tip draped over the front of the lower jaw -->
+      <ellipse cx="414" cy="312" rx="20" ry="9" fill="#000" opacity="0.55" filter="url(#blur4)"/>
+      <path d="M380,266 C402,262 424,270 432,290 C440,312 436,336 420,340 C405,342 400,328 403,312 C405,298 398,288 382,286 Z"
+            fill="url(#tongue)"/>
+      <path d="M390,268 C408,268 422,278 428,294" fill="none" stroke="#ffb3d0" stroke-width="4" stroke-linecap="round" opacity="0.5" filter="url(#blur4)"/>
+      <path d="M410,282 C418,296 420,314 416,328" fill="none" stroke="#3a0410" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+
+      <!-- upper jaw (opened) -->
+      <g transform="rotate(-32 130 292)">
+        <path d="M136,256 L136,270 L228,270 L240,290 L254,270 L266,294 L280,270 L294,288 L306,270 L320,296 L334,270 L346,288 L360,270 L374,292 L388,270 L400,282 L400,256 Z"
+              fill="url(#toothUp)"/>
+        <rect x="132" y="236" width="274" height="34" fill="url(#pages)"/>
+        <path d="M134,242 L404,242 M134,247 L404,247 M134,253 L404,253 M134,259 L404,259 M134,265 L404,265" stroke="#7a6038" stroke-width="1.2" opacity="0.55"/>
+        <path d="M134,269 L404,269" stroke="#d9a6ff" stroke-width="4" opacity="0.7" filter="url(#blur4)"/>
+        <rect x="118" y="206" width="296" height="32" rx="7" fill="url(#leatherTop)" filter="url(#leather)"/>
+        <path d="M124,209 L410,209" stroke="#c4875a" stroke-width="2" opacity="0.45"/>
+        <path d="M380,238 L414,238 L414,208 L404,208 L404,228 L380,228 Z" fill="url(#brass)"/>
+        <!-- cover emblem -->
+        <path d="M240,236 l16,-14 16,14 -16,14 z" fill="url(#brass)"/>
+        <circle cx="256" cy="236" r="4" fill="#d9a6ff" filter="url(#glow)"/>
+        <!-- brows -->
+        <path d="M268,190 C286,164 330,160 344,180 L340,196 C324,182 292,184 276,204 Z" fill="#3a1608"/>
+        <path d="M340,186 C356,168 396,172 404,192 L398,206 C386,192 360,190 346,204 Z" fill="#3a1608"/>
+        <!-- eyes -->
+        <circle cx="306" cy="208" r="27" fill="#120400"/>
+        <circle cx="306" cy="208" r="22" fill="url(#eye)" filter="url(#glow)"/>
+        <ellipse cx="310" cy="208" rx="4.5" ry="16" fill="#140400"/>
+        <circle cx="370" cy="210" r="24" fill="#120400"/>
+        <circle cx="370" cy="210" r="19" fill="url(#eye)" filter="url(#glow)"/>
+        <ellipse cx="374" cy="210" rx="4" ry="14" fill="#140400"/>
+        <path d="M282,196 C292,184 318,182 330,194" fill="none" stroke="#2a0e04" stroke-width="7" stroke-linecap="round"/>
+        <path d="M350,198 C358,188 380,188 390,198" fill="none" stroke="#2a0e04" stroke-width="6" stroke-linecap="round"/>
+        <rect x="100" y="206" width="40" height="60" rx="12" fill="#1e0a04"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- arcane letters drifting out -->
+  <g font-family="Georgia, 'Times New Roman', serif" font-style="italic" fill="#f0dcff" text-anchor="middle" filter="url(#glow)">
+    <text x="420" y="150" font-size="56" opacity="0.95" transform="rotate(12 420 150)">å</text>
+    <text x="470" y="215" font-size="38" opacity="0.75" transform="rotate(20 470 215)">é</text>
+    <text x="372" y="82" font-size="34" opacity="0.6" transform="rotate(-6 372 82)">ñ</text>
+    <text x="462" y="96" font-size="26" opacity="0.45">ü</text>
+  </g>
+  <path d="M345,170 C380,140 390,110 430,96 M360,190 C410,180 430,160 470,150" fill="none" stroke="#c890ff" stroke-width="3" opacity="0.35" filter="url(#blur4)"/>
+
+  <!-- painterly finish -->
+  <rect width="512" height="512" filter="url(#grain)" opacity="0.10" style="mix-blend-mode:overlay"/>
+  <rect width="512" height="512" fill="url(#vignette)"/>
+
+  <!-- icon frame -->
+  <rect x="5" y="5" width="502" height="502" fill="none" stroke="#000" stroke-width="10"/>
+  <rect x="12" y="12" width="488" height="488" fill="none" stroke="#7a6640" stroke-width="3" opacity="0.7"/>
+  <rect x="15" y="15" width="482" height="482" fill="none" stroke="#000" stroke-width="2" opacity="0.6"/>
+</svg>
