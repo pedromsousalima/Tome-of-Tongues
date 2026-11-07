@@ -71,3 +71,5 @@ wrong word or want to improve a language, contributions are very welcome.
   appears in `Swedish.lua`, since that's where its tier and extra answers come from.
 - To add a language, copy one `ns.AddLanguage(...)` block and change the code, name and words.
   Add a flag for it in `FLAG_PAINTERS` in `UI.lua`.
+
+<p align="center"><img src="art/footer.svg" alt="A party of adventurers defeats a green bird-man, who drops the word fågel = bird"></p>
