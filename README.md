@@ -35,10 +35,14 @@ The word lists rely heavily on AI, because I don't speak most of these languages
 wrong word or want to improve a language, contributions are very welcome.
 
 ## Install
-1. Download this repo (**Code → Download ZIP**) and unzip it.
-2. Copy the `TomeOfTongues` folder into
-   `World of Warcraft\_forever_\Interface\AddOns\`.
+1. Download `TomeOfTongues-vX.Y.Z.zip` from the latest
+   [release](../../releases/latest).
+2. Unzip it into `World of Warcraft\_forever_\Interface\AddOns\`. The zip already contains
+   the `TomeOfTongues` folder, so you end up with `AddOns\TomeOfTongues\`.
 3. Restart the game and tick **Tome of Tongues** under AddOns on the character screen.
+
+You can also use **Code → Download ZIP** on this page. In that case, copy only the
+`TomeOfTongues` folder from inside the download, as shown below.
 
 <p align="center"><img src="art/install.svg" alt="Copy the TomeOfTongues folder from the download into World of Warcraft\_forever_\Interface\AddOns. The .toc file must sit directly inside AddOns\TomeOfTongues."></p>
 
