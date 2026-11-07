@@ -20,6 +20,17 @@ Built for **WoW Forever**.
 Japanese is written in Latin letters (romaji), because the English game font can't draw
 Japanese script. If accented letters (é, ö, ñ...) show as boxes, type `/tot plain`.
 
+## A note from me
+I made this small add-on because I needed to learn a language quickly, and I also wanted to keep
+grinding the game. This is the solution I came up with for doing both at once.
+
+It hasn't been tested pedagogically in any way, and it's probably not the most efficient way to
+learn. It works for me, and I hope it works for you too, but it will never replace a person whose
+job is teaching languages.
+
+The word lists rely heavily on AI, because I don't speak most of these languages. If you spot a
+wrong word or want to improve a language, contributions are very welcome.
+
 ## Install
 1. Download this repo (**Code → Download ZIP**) and unzip it.
 2. Copy the `TomeOfTongues` folder into
