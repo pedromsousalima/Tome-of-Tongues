@@ -1,10 +1,8 @@
-<p align="center"><img src="art/icon.png" width="160" alt="Tome of Tongues"></p>
+<p align="center"><img src="art/banner.png" alt="Tome of Tongues: learn a language while you quest"></p>
 
-# Tome of Tongues
+**Hej, adventurer!** Turn every quest into a language lesson. Tome of Tongues swaps words in NPC dialogue into one of 9 languages, then a strange tome pops up to quiz you. Typos forgiven, synonyms welcome. Get it right and more words turn foreign, until whole sentences do. Get it wrong and the tome backs off a little.
 
-World of Warcraft add-on (built for WoW Forever) that teaches a language through quest and NPC dialogue. Swaps words into one of 9 languages and quizzes you on their meaning, accepting typos and synonyms. Swap rate adapts to your answers, scaling from single words to whole sentences.
-
-> Hej, adventurer! Turn every quest into a language lesson. Tome of Tongues swaps words in NPC dialogue into one of 9 languages, then a strange tome pops up to quiz you. Typos forgiven, synonyms welcome. Get it right and more words turn foreign, until whole sentences do. Get it wrong and the tome backs off a little.
+Built for **WoW Forever**.
 
 ## Languages
 | Code | Language | Words |
